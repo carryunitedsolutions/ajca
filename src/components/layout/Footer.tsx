@@ -16,14 +16,14 @@ function InstagramIcon() {
 export function Footer() {
   return (
     <footer className="reference-footer bg-[#eaf2f2] text-[#242424]">
-      <div className="site-container grid items-center py-10 lg:grid-cols-12">
+      <div className="site-container grid items-center gap-4 py-8 md:grid-cols-[auto_1fr] lg:grid-cols-12 lg:gap-0 lg:py-10">
         <div className="py-4 lg:col-span-2">
           <NavLink to="/" aria-label="AJCA GROUP home">
             <CompanyBrand />
           </NavLink>
         </div>
 
-        <nav className="flex flex-col items-center justify-center gap-1 py-4 text-[#a33f10] lg:col-span-8 lg:flex-row" aria-label="Footer navigation">
+        <nav className="flex flex-col items-center justify-center gap-1 py-4 text-[#a33f10] sm:flex-row sm:flex-wrap md:justify-end lg:col-span-8 lg:justify-center" aria-label="Footer navigation">
           <NavLink className="px-4 py-2 hover:text-[var(--ssar-orange)]" to="/">Home</NavLink>
           <NavLink className="px-4 py-2 hover:text-[var(--ssar-orange)]" to="/about-us">About us</NavLink>
           <NavLink className="px-4 py-2 hover:text-[var(--ssar-orange)]" to="/our-services">Services</NavLink>
@@ -31,7 +31,7 @@ export function Footer() {
           <NavLink className="orange-button ml-0 lg:ml-4" to="/contactus">Contact us today</NavLink>
         </nav>
 
-        <div className="flex items-center justify-center gap-6 py-4 lg:col-span-2">
+        <div className="flex items-center justify-center gap-6 py-4 md:col-start-2 md:justify-end lg:col-span-2 lg:col-start-auto">
           <a href="#" aria-label="Facebook" className="p-2 hover:text-[var(--ssar-orange)]"><FacebookIcon /></a>
           <a href="#" aria-label="X" className="p-2 hover:text-[var(--ssar-orange)]"><XIcon /></a>
           <a href="#" aria-label="Instagram" className="p-2 hover:text-[var(--ssar-orange)]"><InstagramIcon /></a>
@@ -41,8 +41,7 @@ export function Footer() {
       <div className="site-container grid gap-2 py-4 text-center text-sm text-zinc-600 md:grid-cols-2 md:text-left">
         <p>Copyright © AJCA GROUP</p>
         <p className="text-[#242424] md:text-right">
-          Powered by <a href="https://www.odoo.com" className="font-bold text-[#a33f10]">Odoo</a> - Create a{' '}
-          <a href="https://www.odoo.com/app/website" className="text-[#a33f10]">free website</a>
+          Powered by <span className="font-bold text-[#a33f10]">Carry United Solutions Private Limited</span>
         </p>
       </div>
     </footer>

@@ -14,19 +14,19 @@ export function HomePage() {
     <main>
       <section className="maze-pattern overflow-hidden">
         <div className="grid lg:h-[700px] lg:grid-cols-12 lg:grid-rows-[repeat(14,50px)]">
-          <div className="h-48 bg-[var(--ssar-orange)] lg:col-[1/5] lg:row-[1/5] lg:h-auto" />
+          <div className="h-3 bg-[var(--ssar-orange)] lg:col-[1/5] lg:row-[1/5] lg:h-auto" />
 
           <img
             src="/assets/home-hero.webp"
             alt="AJCA GROUP manpower solutions"
-            className="h-80 w-full object-cover lg:col-[5/8] lg:row-[1/10] lg:h-full"
+            className="h-72 w-full object-cover sm:h-80 lg:col-[5/8] lg:row-[1/10] lg:h-full"
           />
 
-          <div className="flex min-h-80 flex-col items-end justify-center bg-white/90 p-8 text-right lg:col-[8/13] lg:row-[1/10] lg:min-h-0 lg:bg-transparent lg:p-10">
-            <h1 className="text-5xl leading-[1.2] text-[var(--ssar-orange)] sm:text-6xl lg:text-[5rem]">
+          <div className="flex min-h-60 flex-col items-end justify-center bg-white/90 p-6 text-right sm:min-h-72 sm:p-8 lg:col-[8/13] lg:row-[1/10] lg:min-h-0 lg:bg-transparent lg:p-8 xl:p-10">
+            <h1 className="text-5xl leading-[1.2] text-[var(--ssar-orange)] sm:text-6xl lg:text-[clamp(3.5rem,5vw,5rem)]">
               Man-Power<br />Solutions
             </h1>
-            <p className="mt-12 text-2xl font-bold lg:text-[2rem]">We are Recruiters</p>
+            <p className="mt-6 text-2xl font-bold lg:mt-12 lg:text-[2rem]">We are Recruiters</p>
           </div>
 
           <img
@@ -44,8 +44,8 @@ export function HomePage() {
           <div>
             <p className="mb-3 font-bold uppercase tracking-[.18em] text-[var(--ssar-orange)]">13 years of experience · Pan India</p>
             <h2 className="text-4xl font-bold leading-tight md:text-5xl">AJCA GROUP</h2>
-            <p className="mt-7 text-justify text-lg leading-8">AJCA GROUP is a manpower and staffing company based in Rishra, Hooghly, West Bengal. Led by proprietor Ajit Kumar Jha, the company brings 13 years of experience to supporting businesses across India.</p>
-            <p className="mt-5 text-justify text-lg leading-8">We help businesses find the workforce they need through manpower supply, recruitment and staffing support. Our approach focuses on understanding each client’s requirements and building lasting working relationships.</p>
+            <p className="mt-7 text-left text-lg leading-8 sm:text-justify">AJCA GROUP is a manpower and staffing company based in Rishra, Hooghly, West Bengal. Led by proprietor Ajit Kumar Jha, the company brings 13 years of experience to supporting businesses across India.</p>
+            <p className="mt-5 text-left text-lg leading-8 sm:text-justify">We help businesses find the workforce they need through manpower supply, recruitment and staffing support. Our approach focuses on understanding each client’s requirements and building lasting working relationships.</p>
           </div>
           <img src="/assets/interview.webp" alt="Professional interview" className="min-h-[430px] w-full rounded-sm object-cover shadow-xl" />
         </div>
@@ -55,7 +55,7 @@ export function HomePage() {
         <div className="site-container">
           <h2 className="mb-12 text-center text-5xl text-white">Our Services</h2>
           <div className="grid gap-8 lg:grid-cols-3">
-            {homeServices.map((service) => <article key={service.title} className="overflow-hidden border-[7px] border-[var(--ssar-orange)] bg-white shadow-[18px_18px_0_#8a704e]"><img src={service.image} alt="" className="h-56 w-full object-cover" /><div className="p-6"><h3 className="text-2xl font-bold">{service.title}</h3><p className="mt-3 text-lg leading-7">{service.text}</p></div></article>)}
+            {homeServices.map((service) => <article key={service.title} className="min-w-0 overflow-hidden border-[7px] border-[var(--ssar-orange)] bg-white shadow-[7px_8px_0_#8a704e] sm:shadow-[12px_12px_0_#8a704e]"><img src={service.image} alt="" className="h-56 w-full object-cover" /><div className="p-6"><h3 className="text-2xl font-bold">{service.title}</h3><p className="mt-3 text-lg leading-7">{service.text}</p></div></article>)}
           </div>
           <div className="mt-12 text-center"><NavLink to="/our-services" className="orange-button">Explore all services</NavLink></div>
         </div>

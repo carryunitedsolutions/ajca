@@ -1,5 +1,5 @@
 import { company } from '../../data/company'
-import { PhoneIcon } from '../icons/Icons'
+import { WhatsAppIcon, PhoneIcon } from '../icons/Icons'
 
 export function CompanyContactCard() {
   const iconClass = 'grid size-10 shrink-0 place-items-center rounded-full bg-white text-[var(--ssar-teal)]'
@@ -12,10 +12,10 @@ export function CompanyContactCard() {
         <p className="mt-2 text-base text-zinc-600">Proprietor <span className="mx-1 text-zinc-400">·</span> <span className="font-bold text-zinc-800">{company.proprietor}</span></p>
 
         <div className="mt-5 space-y-3 border-t border-[#d9e7e6] pt-5">
-          <div className="flex items-center gap-3">
+          <a href={company.mapsHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssar-teal)]" aria-label={`Open ${company.address} in Google Maps`}>
             <span className={iconClass}><svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-            <div className="min-w-0"><p className="text-sm text-zinc-500">Our location</p><p className="text-base leading-6 text-zinc-800">{company.address}</p></div>
-          </div>
+            <div className="min-w-0"><p className="text-sm text-zinc-500">Our location</p><p className="text-base leading-6 text-zinc-800 group-hover:text-[var(--ssar-teal)] group-hover:underline">{company.address}</p></div>
+          </a>
           <a href={`mailto:${company.email}`} className="group flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssar-teal)]">
             <span className={iconClass}><svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span>
             <div className="min-w-0"><p className="text-sm text-zinc-500">Email us</p><p className="break-all text-base leading-6 text-zinc-800 group-hover:text-[var(--ssar-teal)] group-hover:underline">{company.email}</p></div>
@@ -23,6 +23,10 @@ export function CompanyContactCard() {
           <a href={company.phoneHref} className="group flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssar-teal)]">
             <span className={iconClass}><PhoneIcon className="size-5" /></span>
             <div><p className="text-sm text-zinc-500">Call us</p><p className="text-base leading-6 text-zinc-800 group-hover:text-[var(--ssar-teal)] group-hover:underline">{company.phone}</p></div>
+          </a>
+          <a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#128c4a]">
+            <span className="grid size-10 shrink-0 place-items-center rounded-full bg-[#e4f7e9] text-[#128c4a]"><WhatsAppIcon /></span>
+            <div><p className="text-sm text-zinc-500">Chat with us</p><p className="text-base font-bold leading-6 text-[#128c4a] group-hover:underline">WhatsApp · {company.phone}</p></div>
           </a>
         </div>
 

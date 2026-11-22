@@ -18,20 +18,18 @@ export function HeroCompanyCard() {
         </div>
       </div>
 
-      <address className="relative mt-4 grid gap-x-8 gap-y-2 border-t border-white/30 pt-3 not-italic sm:grid-cols-2">
-        <div>
+      <address className="relative mt-4 grid gap-x-4 gap-y-3 border-t border-white/30 pt-3 not-italic lg:grid-cols-[1.05fr_.8fr_1.15fr]">
+        <div className="min-w-0">
           <p className="text-sm font-bold uppercase tracking-[.12em] text-white/70">Based in</p>
-          <p className="mt-1 text-lg leading-snug">{company.address}</p>
+          <a className="mt-1 inline-block text-lg leading-snug underline-offset-4 hover:underline focus-visible:underline" href={company.mapsHref} target="_blank" rel="noopener noreferrer" aria-label={`Open ${company.address} in Google Maps`}>{company.address}</a>
         </div>
-        <div className="grid gap-2">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[.12em] text-white/70">Contact No.</p>
-            <a className="mt-1 inline-block text-lg leading-snug underline-offset-4 hover:underline focus-visible:underline" href={company.phoneHref}>{company.phone}</a>
-          </div>
-          <div>
-            <p className="text-sm font-bold uppercase tracking-[.12em] text-white/70">E-Mail</p>
-            <a className="mt-1 inline-block break-all text-lg leading-snug underline-offset-4 hover:underline focus-visible:underline" href={`mailto:${company.email}`}>{company.email}</a>
-          </div>
+        <div className="min-w-0">
+          <p className="text-sm font-bold uppercase tracking-[.12em] text-white/70">Contact No.</p>
+          <a className="mt-1 inline-block text-lg leading-snug underline-offset-4 hover:underline focus-visible:underline" href={company.phoneHref}>{company.phone}</a>
+        </div>
+        <div className="min-w-0">
+          <p className="text-sm font-bold uppercase tracking-[.12em] text-white/70">E-Mail</p>
+          <a className="mt-1 inline-block break-all text-lg leading-snug underline-offset-4 hover:underline focus-visible:underline" href={`mailto:${company.email}`}>{company.email}</a>
         </div>
       </address>
     </div>

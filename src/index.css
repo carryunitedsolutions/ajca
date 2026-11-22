@@ -18,7 +18,7 @@ html { min-width: 320px; scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--ssar-bg); }
 button, input, textarea, select { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
-img { display: block; max-width: 100%; }
+img { max-width: 100%; }
 ::selection { color: white; background: var(--ssar-orange); }
 
 .page-shell { min-height: 100vh; display: flex; flex-direction: column; }

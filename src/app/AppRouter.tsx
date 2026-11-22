@@ -8,6 +8,7 @@ import { NotFoundPage } from '../pages/NotFound/NotFoundPage'
 import { PrivacyPage } from '../pages/Privacy/PrivacyPage'
 import { ServicesPage } from '../pages/Services/ServicesPage'
 import { SignInPage } from '../pages/SignIn/SignInPage'
+import { SearchPage } from '../pages/Search/SearchPage'
 
 export function AppRouter() {
   return (
@@ -20,6 +21,7 @@ export function AppRouter() {
         <Route path="appointment" element={<AppointmentPage />} />
         <Route path="privacy" element={<PrivacyPage />} />
         <Route path="sign-in" element={<SignInPage />} />
+        <Route path="search" element={<SearchPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

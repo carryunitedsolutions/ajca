@@ -5,7 +5,13 @@
 .home-contact-copy { grid-area: 5 / 1 / 8 / 6; }
 .home-contact-copy h2 { font-size: 48px; font-weight: 400; line-height: 1.2; margin-bottom: 8px; color: #211509; }
 .home-contact-details { grid-area: 9 / 1 / 12 / 6; padding-top: 8px; font-style: normal; font-weight: bold; }
-.home-contact-details a { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.home-contact-details a { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.home-contact-details .home-contact-map { align-items: flex-start; margin-bottom: 0; }
+.home-contact-details .home-contact-map:hover span { text-decoration: underline; }
+.home-contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-bottom: 16px; }
+.home-contact-actions a { margin-bottom: 0; }
+.home-contact-actions .whatsapp-link { gap: 7px; border: 1px solid #128c4a; border-radius: 999px; padding: 5px 11px; color: #128c4a; font-size: 16px; }
+.home-contact-actions .whatsapp-link:hover { background: #e4f7e9; }
 .home-contact-details svg { display: inline-block; width: 18px; height: 18px; vertical-align: middle; flex-shrink: 0; }
 .home-contact-details p svg { margin-right: 16px; }
 .home-contact-form { grid-area: 1 / 7 / 13 / 13; padding-block: 26px 16px; }

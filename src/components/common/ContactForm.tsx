@@ -30,10 +30,11 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       </div>}
       <label className={compact ? 'home-form-row' : ''}><span>Subject *</span><input className="field mt-1" name="subject" required placeholder={compact ? '' : 'Describe your request'} /></label>
       <label className={compact ? 'home-form-row' : ''}><span>{compact ? 'Your Question' : 'Message'} *</span><textarea className="field mt-1 min-h-32 resize-y" name="message" required placeholder={compact ? '' : 'Write down your message'} /></label>
-      <p className="text-sm text-zinc-600">Submitting opens your email app with the form details filled in. Please press Send there to email us.</p>
+      {/* <p className="text-sm text-zinc-600">Submitting opens your email app with the form details filled in. Please press Send there to email us.</p> */}
       <div className="flex flex-wrap items-center justify-end gap-4">
         {draftOpened && <p className="text-[var(--ssar-teal)]" role="status">Email draft should open now. If it does not, set a default email app on your device.</p>}
-        <button type="submit" className="orange-button">Open email draft</button>
+        <button type="submit" className="orange-button">Submit
+      </button>
       </div>
     </form>
   )

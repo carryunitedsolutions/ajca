@@ -17,9 +17,9 @@ export function VisitSection() {
             allowFullScreen
           />
           <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-600">
-            <span>{company.address}</span>
+            <a href={company.mapsHref} target="_blank" rel="noopener noreferrer" className="hover:underline">{company.address}</a>
             <a
-              href={`https://www.google.com/maps/search/?api=1&query=${location}`}
+              href={company.mapsHref}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--ssar-teal)] underline underline-offset-4"
