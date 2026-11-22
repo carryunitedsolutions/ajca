@@ -1,0 +1,29 @@
+.home-contact { background: #eaf2f2; padding-top: 24px; }
+.home-contact-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: repeat(12, 50px); font-size: 18px; line-height: 1.25; }
+.home-contact-image { grid-area: 1 / 1 / 5 / 6; padding-block: 16px; }
+.home-contact-image img { width: 100%; height: 100%; object-fit: cover; }
+.home-contact-copy { grid-area: 5 / 1 / 8 / 6; }
+.home-contact-copy h2 { font-size: 48px; font-weight: 400; line-height: 1.2; margin-bottom: 8px; color: #211509; }
+.home-contact-details { grid-area: 9 / 1 / 12 / 6; padding-top: 8px; font-style: normal; font-weight: bold; }
+.home-contact-details a { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.home-contact-details svg { display: inline-block; width: 18px; height: 18px; vertical-align: middle; flex-shrink: 0; }
+.home-contact-details p svg { margin-right: 16px; }
+.home-contact-form { grid-area: 1 / 7 / 13 / 13; padding-block: 26px 16px; }
+.home-contact-form form { gap: 16px; }
+.home-contact-form .home-form-row { display: grid; grid-template-columns: 200px minmax(0, 1fr); align-items: start; }
+.home-contact-form .home-form-row > span { padding-top: 7px; }
+.home-contact-form .field { margin: 0; min-height: 38px; padding: 6px 12px; font-size: 18px; line-height: 24px; border-color: #cbd3d4; }
+.home-contact-form textarea.field { height: 86px; min-height: 86px; }
+.home-contact-form .orange-button, .reference-footer .orange-button { min-height: 38px; padding: 6px 12px; font-size: 18px; line-height: 26px; font-weight: 400; background: #e85b14; }
+.reference-footer { background: #eaf2f2; }
+@media (max-width: 991px) {
+  .home-contact-grid { display: flex; flex-direction: column; gap: 24px; }
+  .home-contact-image { padding: 0; }
+  .home-contact-image img { height: 168px; }
+  .home-contact-copy h2 { font-size: 40px; }
+  .home-contact-details { padding-top: 0; }
+  .home-contact-form { padding: 0 0 24px; }
+}
+@media (max-width: 575px) {
+  .home-contact-form .home-form-row { grid-template-columns: 1fr; gap: 6px; }
+}

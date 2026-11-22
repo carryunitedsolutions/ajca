@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --ssar-bg: #edf4f4;
+  --ssar-teal: #2d817f;
+  --ssar-orange: #eb5a17;
+  --ssar-brown: #8a704e;
+  --ssar-ink: #232323;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ssar-ink);
+  background: var(--ssar-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--ssar-bg); }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+img { display: block; max-width: 100%; }
+::selection { color: white; background: var(--ssar-orange); }
+
+.page-shell { min-height: 100vh; display: flex; flex-direction: column; }
+.site-container { width: min(100% - 2rem, 1290px); margin-inline: auto; }
+.section-pad { padding-block: clamp(3.5rem, 7vw, 6.5rem); }
+
+.maze-pattern {
+  background-color: #fff;
+  background-image: url('/assets/maze-pattern.svg');
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: 800px 800px;
+}
+
+.field {
+  width: 100%; border: 1px solid #cfd5d5; border-radius: .28rem; background: white;
+  padding: .7rem .85rem; font-size: 1rem; outline: none; transition: border-color .2s, box-shadow .2s;
+}
+.field:focus { border-color: var(--ssar-teal); box-shadow: 0 0 0 3px rgba(45,129,127,.15); }
+.field::placeholder { color: #8d9295; }
+
+.orange-button {
+  display: inline-flex; min-height: 2.7rem; align-items: center; justify-content: center;
+  border-radius: .4rem; background: var(--ssar-orange); color: white; padding: .65rem 1.25rem;
+  font-weight: 700; transition: transform .2s, filter .2s;
+}
+.orange-button:hover { filter: brightness(.94); transform: translateY(-1px); }
+
+@media (max-width: 639px) {
+  .site-container { width: min(100% - 1.25rem, 1290px); }
+}
