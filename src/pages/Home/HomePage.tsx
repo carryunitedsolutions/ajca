@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { HomeContactSection } from '../../components/home/HomeContactSection'
 import { HeroCompanyCard } from '../../components/home/HeroCompanyCard'
 import { GovernmentBusinessSection } from '../../components/home/GovernmentBusinessSection'
+import { HomeStructuredData } from '../../components/seo/HomeStructuredData'
 
 const homeServices = [
   { title: 'PAYROLL SERVICES', image: '/assets/payroll.webp', text: 'AJCA GROUP take care of the payroll compliance obligation such as the Provident Fund (PF), Employees State Insurance (ESI), Professional Tax (PT) and Labour Welfare Fund (LWF).' },
@@ -13,6 +14,7 @@ const homeServices = [
 export function HomePage() {
   return (
     <main>
+      <HomeStructuredData />
       <section className="maze-pattern overflow-hidden">
         <div className="grid lg:h-[700px] lg:grid-cols-12 lg:grid-rows-[repeat(14,50px)]">
           <div className="flex min-h-40 flex-col justify-center bg-[#6684a3] px-7 py-7 sm:px-10 lg:col-[1/5] lg:row-[1/5] lg:min-h-0">

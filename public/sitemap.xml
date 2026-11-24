@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Demo domain: replace example.com with AJCA's live domain before submitting to Google Search Console. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  <url>
+    <loc>https://example.com/about-us</loc>
+  </url>
+  <url>
+    <loc>https://example.com/our-services</loc>
+  </url>
+  <url>
+    <loc>https://example.com/contactus</loc>
+  </url>
+  <url>
+    <loc>https://example.com/privacy</loc>
+  </url>
+</urlset>
