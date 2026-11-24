@@ -9,7 +9,7 @@ export function CompanyContactCard() {
       <div className="h-1 bg-[var(--ssar-teal)]" />
       <div className="p-5 sm:p-7">
         <h2 className="text-3xl font-bold tracking-wide text-[var(--ssar-teal)]">{company.name}</h2>
-        <p className="mt-2 text-base text-zinc-600">Proprietor <span className="mx-1 text-zinc-400">·</span> <span className="font-bold text-zinc-800">{company.proprietor}</span></p>
+        <p className="mt-2 text-base text-zinc-600">Founder <span className="mx-1 text-zinc-400">·</span> <span className="font-bold text-zinc-800">{company.founder}</span></p>
 
         <div className="mt-5 space-y-3 border-t border-[#d9e7e6] pt-5">
           <a href={company.mapsHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssar-teal)]" aria-label={`Open ${company.address} in Google Maps`}>

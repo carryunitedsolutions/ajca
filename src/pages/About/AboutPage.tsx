@@ -7,7 +7,7 @@ export function AboutPage() {
       <div className="space-y-5 text-lg leading-8 text-zinc-800">
         <p>At AJCA GROUP, we specialize in delivering reliable and efficient manpower supply services tailored for modern logistics and supply chain operations. With a strong presence across India, we support businesses in Warehouse, Sort Center, Delivery Center, Fulfillment Center, and Mother Hub operations.</p>
         <p>Our mission is to empower organizations with skilled and unskilled manpower that enhances productivity, minimizes downtime, and ensures seamless day-to-day operations. We understand the dynamic nature of logistics, and our workforce solutions are designed to adapt to your business requirements with speed and precision.</p>
-        <p>Led by proprietor Ajit Kumar Jha, AJCA GROUP brings 13 years of experience and serves clients across India from Rishra, Hooghly, West Bengal.</p>
+        <p>Led by founder Ajit Kumar Jha, AJCA GROUP brings 13 years of experience and serves clients across India from Rishra, Hooghly, West Bengal.</p>
         <p>At AJCA GROUP, we are committed to building long-term partnerships by delivering quality manpower, maintaining high service standards, and supporting our clients in achieving their business goals.</p>
       </div>
       <div className="text-center text-[var(--ssar-teal)]"><p className="text-7xl font-bold">13</p><p className="mt-3 text-2xl">Years of experience</p><p className="mt-2 text-lg">Pan-India presence</p></div>

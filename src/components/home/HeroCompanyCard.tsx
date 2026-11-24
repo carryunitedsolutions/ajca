@@ -10,7 +10,7 @@ export function HeroCompanyCard() {
         <div>
           <p className="text-sm font-bold uppercase tracking-[.18em] text-white/75">Manpower &amp; staffing solutions</p>
           <h2 className="mt-1 text-3xl font-bold leading-tight sm:text-4xl">{company.name}</h2>
-          <p className="mt-1 text-base text-white/85">Proprietor <span className="font-bold text-white">{company.proprietor}</span></p>
+          <p className="mt-1 text-base text-white/85">Founder <span className="font-bold text-white">{company.founder}</span></p>
         </div>
         <div className="rounded-lg border border-white/50 bg-[var(--ssar-orange)] px-5 py-2 text-center text-white shadow-lg shadow-black/15">
           <span className="block text-2xl font-bold leading-none sm:text-3xl">{company.experience}</span>

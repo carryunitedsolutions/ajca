@@ -2,6 +2,7 @@ import { OwnerProfile } from '../../components/common/OwnerProfile'
 import { NavLink } from 'react-router-dom'
 import { HomeContactSection } from '../../components/home/HomeContactSection'
 import { HeroCompanyCard } from '../../components/home/HeroCompanyCard'
+import { GovernmentBusinessSection } from '../../components/home/GovernmentBusinessSection'
 
 const homeServices = [
   { title: 'PAYROLL SERVICES', image: '/assets/payroll.webp', text: 'AJCA GROUP take care of the payroll compliance obligation such as the Provident Fund (PF), Employees State Insurance (ESI), Professional Tax (PT) and Labour Welfare Fund (LWF).' },
@@ -44,7 +45,7 @@ export function HomePage() {
           <div>
             <p className="mb-3 font-bold uppercase tracking-[.18em] text-[var(--ssar-orange)]">13 years of experience · Pan India</p>
             <h2 className="text-4xl font-bold leading-tight md:text-5xl">AJCA GROUP</h2>
-            <p className="mt-7 text-left text-lg leading-8 sm:text-justify">AJCA GROUP is a manpower and staffing company based in Rishra, Hooghly, West Bengal. Led by proprietor Ajit Kumar Jha, the company brings 13 years of experience to supporting businesses across India.</p>
+            <p className="mt-7 text-left text-lg leading-8 sm:text-justify">AJCA GROUP is a manpower and staffing company based in Rishra, Hooghly, West Bengal. Led by founder Ajit Kumar Jha, the company brings 13 years of experience to supporting businesses across India.</p>
             <p className="mt-5 text-left text-lg leading-8 sm:text-justify">We help businesses find the workforce they need through manpower supply, recruitment and staffing support. Our approach focuses on understanding each client’s requirements and building lasting working relationships.</p>
           </div>
           <img src="/assets/interview.webp" alt="Professional interview" className="min-h-[430px] w-full rounded-sm object-cover shadow-xl" />
@@ -60,6 +61,8 @@ export function HomePage() {
           <div className="mt-12 text-center"><NavLink to="/our-services" className="orange-button">Explore all services</NavLink></div>
         </div>
       </section>
+
+      <GovernmentBusinessSection />
 
       <section className="bg-[#edf4f4] section-pad">
         <div className="site-container"><h2 className="mb-12 text-center text-5xl">Our Mission & Vision</h2><div className="grid gap-7 lg:grid-cols-2">

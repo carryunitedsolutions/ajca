@@ -13,7 +13,7 @@ export const searchPages: SearchPage[] = [
     title: 'Home',
     path: '/',
     description: 'AJCA GROUP manpower solutions, company overview, experience and services.',
-    searchableText: 'home manpower recruiters staffing payroll contract permanent requirement mission vision culture pan India 13 years experience',
+    searchableText: 'home manpower recruiters staffing payroll contract permanent requirement mission vision culture pan India 13 years experience government GeM bids tenders PSU public sector manpower outsourcing procurement',
   },
   {
     title: 'Services',
@@ -29,8 +29,8 @@ export const searchPages: SearchPage[] = [
   {
     title: 'About Us',
     path: '/about-us',
-    description: 'Learn about AJCA GROUP, proprietor Ajit Kumar Jha and 13 years of experience across India.',
-    searchableText: `about company proprietor owner director ${company.name} ${company.proprietor} ${company.address} logistics supply chain warehouse vision mission values pan India`,
+    description: 'Learn about AJCA GROUP, founder Ajit Kumar Jha and 13 years of experience across India.',
+    searchableText: `about company founder owner director ${company.name} ${company.founder} ${company.address} logistics supply chain warehouse vision mission values pan India`,
   },
   {
     title: 'Contact Us',
