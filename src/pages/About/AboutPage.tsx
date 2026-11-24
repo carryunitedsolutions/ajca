@@ -3,7 +3,7 @@ import { PageHero } from '../../components/common/PageHero'
 
 export function AboutPage() {
   return <main><PageHero title="About us" />
-    <section className="bg-[#edf4f4] section-pad"><div className="site-container grid gap-12 lg:grid-cols-[1.35fr_.65fr] lg:items-center">
+    <section className="bg-[#f5f7fa] section-pad"><div className="site-container grid gap-12 lg:grid-cols-[1.35fr_.65fr] lg:items-center">
       <div className="space-y-5 text-lg leading-8 text-zinc-800">
         <p>At AJCA GROUP, we specialize in delivering reliable and efficient manpower supply services tailored for modern logistics and supply chain operations. With a strong presence across India, we support businesses in Warehouse, Sort Center, Delivery Center, Fulfillment Center, and Mother Hub operations.</p>
         <p>Our mission is to empower organizations with skilled and unskilled manpower that enhances productivity, minimizes downtime, and ensures seamless day-to-day operations. We understand the dynamic nature of logistics, and our workforce solutions are designed to adapt to your business requirements with speed and precision.</p>

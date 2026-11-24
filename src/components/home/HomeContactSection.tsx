@@ -15,7 +15,7 @@ export function HomeContactSection() {
           <p>We'd love to hear from you! Whether you have questions, feedback, or need support, our team is here to help. Simply fill out the form below, and we aim to respond to all inquiries within 24 hours. Thank you for getting in touch!</p>
         </div>
         <address className="home-contact-details">
-          <a href={`mailto:${company.email}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 5h20v14H2z"/><path d="m2 6 10 7L22 6" fill="none" stroke="#eaf2f2" strokeWidth="1.5"/></svg>{company.email}</a>
+          <a href={`mailto:${company.email}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 5h20v14H2z"/><path d="m2 6 10 7L22 6" fill="none" stroke="#e9eef5" strokeWidth="1.5"/></svg>{company.email}</a>
           <div className="home-contact-actions">
             <a href={company.phoneHref}><PhoneIcon />{company.phone}</a>
             <a className="whatsapp-link" href={company.whatsappHref} target="_blank" rel="noopener noreferrer"><WhatsAppIcon />WhatsApp</a>

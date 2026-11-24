@@ -15,7 +15,7 @@ function InstagramIcon() {
 
 export function Footer() {
   return (
-    <footer className="reference-footer bg-[#eaf2f2] text-[#242424]">
+    <footer className="reference-footer bg-[#e9eef5] text-[#1b2b40]">
       <div className="site-container grid items-center gap-4 py-8 md:grid-cols-[auto_1fr] lg:grid-cols-12 lg:gap-0 lg:py-10">
         <div className="py-4 lg:col-span-2">
           <NavLink to="/" aria-label="AJCA GROUP home">
@@ -23,7 +23,7 @@ export function Footer() {
           </NavLink>
         </div>
 
-        <nav className="flex flex-col items-center justify-center gap-1 py-4 text-[#a33f10] sm:flex-row sm:flex-wrap md:justify-end lg:col-span-8 lg:justify-center" aria-label="Footer navigation">
+        <nav className="flex flex-col items-center justify-center gap-1 py-4 text-[#8d5e18] sm:flex-row sm:flex-wrap md:justify-end lg:col-span-8 lg:justify-center" aria-label="Footer navigation">
           <NavLink className="px-4 py-2 hover:text-[var(--ssar-orange)]" to="/">Home</NavLink>
           <NavLink className="px-4 py-2 hover:text-[var(--ssar-orange)]" to="/about-us">About us</NavLink>
           <NavLink className="px-4 py-2 hover:text-[var(--ssar-orange)]" to="/our-services">Services</NavLink>
@@ -40,8 +40,8 @@ export function Footer() {
 
       <div className="site-container grid gap-2 py-4 text-center text-sm text-zinc-600 md:grid-cols-2 md:text-left">
         <p>Copyright © AJCA GROUP</p>
-        <p className="text-[#242424] md:text-right">
-          Powered by <span className="font-bold text-[#a33f10]">Carry United Solutions Private Limited</span>
+        <p className="text-[#1b2b40] md:text-right">
+          Powered by <span className="font-bold text-[#8d5e18]">Carry United Solutions Private Limited</span>
         </p>
       </div>
     </footer>

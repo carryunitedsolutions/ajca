@@ -16,7 +16,7 @@ export function SearchPage() {
   }
 
   return (
-    <main className="min-h-[65vh] bg-[#edf4f4] section-pad">
+    <main className="min-h-[65vh] bg-[#f5f7fa] section-pad">
       <div className="site-container max-w-4xl">
         <h1 className="text-4xl font-bold md:text-5xl">Search the website</h1>
         <p className="mt-3 text-lg text-zinc-600">Find pages, services and company information.</p>

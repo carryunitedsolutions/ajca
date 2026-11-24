@@ -19,7 +19,7 @@ export function Header() {
   const navClass = ({ isActive }: { isActive: boolean }) => `text-[1.05rem] transition-colors hover:text-[var(--ssar-orange)] ${isActive ? 'text-black' : 'text-zinc-600'}`
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-[#edf4f4]/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-black/5 bg-[#f5f7fa]/95 backdrop-blur">
       <div className="site-container flex h-[86px] items-center gap-3 lg:gap-9">
         <NavLink to="/" aria-label="AJCA GROUP home" className="shrink-0"><CompanyBrand /></NavLink>
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main navigation">
@@ -38,7 +38,7 @@ export function Header() {
         <a href={company.whatsappHref} target="_blank" rel="noopener noreferrer" className="ml-auto grid size-11 shrink-0 place-items-center rounded-full bg-[#128c4a] text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#128c4a] lg:hidden" aria-label="Chat with AJCA GROUP on WhatsApp" title="WhatsApp"><WhatsAppIcon className="size-6" /></a>
         <button onClick={() => setMobileOpen((value) => !value)} className="grid size-11 shrink-0 place-items-center lg:hidden" aria-expanded={mobileOpen} aria-label="Toggle navigation">{mobileOpen ? <CloseIcon /> : <MenuIcon />}</button>
       </div>
-      {mobileOpen && <div className="border-t border-black/10 bg-[#edf4f4] px-5 pb-6 pt-4 lg:hidden">
+      {mobileOpen && <div className="border-t border-black/10 bg-[#f5f7fa] px-5 pb-6 pt-4 lg:hidden">
         <form role="search" onSubmit={submitSearch} className="mb-5 flex rounded-md border border-black/10 bg-white p-2"><input name="search" type="search" className="min-w-0 grow px-2 outline-none" placeholder="Search all pages..." aria-label="Search all pages" /><button type="submit" className="p-2" aria-label="Submit search"><SearchIcon /></button></form>
         <nav className="flex flex-col gap-4" aria-label="Mobile navigation">
           {links.map(([label, path]) => <NavLink onClick={() => setMobileOpen(false)} key={path} to={path} className={navClass}>{label}</NavLink>)}

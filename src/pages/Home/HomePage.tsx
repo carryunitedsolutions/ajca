@@ -15,7 +15,10 @@ export function HomePage() {
     <main>
       <section className="maze-pattern overflow-hidden">
         <div className="grid lg:h-[700px] lg:grid-cols-12 lg:grid-rows-[repeat(14,50px)]">
-          <div className="h-3 bg-[var(--ssar-orange)] lg:col-[1/5] lg:row-[1/5] lg:h-auto" />
+          <div className="flex min-h-40 flex-col justify-center bg-[#6684a3] px-7 py-7 sm:px-10 lg:col-[1/5] lg:row-[1/5] lg:min-h-0">
+            <span className="text-sm font-bold uppercase tracking-[.2em] text-[#142b43]">AJCA GROUP</span>
+            <p className="mt-3 max-w-md text-3xl font-bold leading-tight text-white sm:text-4xl">Reliable teams.<br />Stronger businesses.</p>
+          </div>
 
           <img
             src="/assets/home-hero.webp"
@@ -24,7 +27,7 @@ export function HomePage() {
           />
 
           <div className="flex min-h-60 flex-col items-end justify-center bg-white/90 p-6 text-right sm:min-h-72 sm:p-8 lg:col-[8/13] lg:row-[1/10] lg:min-h-0 lg:bg-transparent lg:p-8 xl:p-10">
-            <h1 className="text-5xl leading-[1.2] text-[var(--ssar-orange)] sm:text-6xl lg:text-[clamp(3.5rem,5vw,5rem)]">
+            <h1 className="text-5xl leading-[1.2] text-[#b7822c] sm:text-6xl lg:text-[clamp(3.5rem,5vw,5rem)]">
               Man-Power<br />Solutions
             </h1>
             <p className="mt-6 text-2xl font-bold lg:mt-12 lg:text-[2rem]">We are Recruiters</p>
@@ -40,7 +43,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#eaf2f2] section-pad">
+      <section className="bg-[#e9eef5] section-pad">
         <div className="site-container grid items-center gap-12 lg:grid-cols-[.9fr_1.1fr]">
           <div>
             <p className="mb-3 font-bold uppercase tracking-[.18em] text-[var(--ssar-orange)]">13 years of experience · Pan India</p>
@@ -56,7 +59,7 @@ export function HomePage() {
         <div className="site-container">
           <h2 className="mb-12 text-center text-5xl text-white">Our Services</h2>
           <div className="grid gap-8 lg:grid-cols-3">
-            {homeServices.map((service) => <article key={service.title} className="min-w-0 overflow-hidden border-[7px] border-[var(--ssar-orange)] bg-white shadow-[7px_8px_0_#8a704e] sm:shadow-[12px_12px_0_#8a704e]"><img src={service.image} alt="" className="h-56 w-full object-cover" /><div className="p-6"><h3 className="text-2xl font-bold">{service.title}</h3><p className="mt-3 text-lg leading-7">{service.text}</p></div></article>)}
+            {homeServices.map((service) => <article key={service.title} className="min-w-0 overflow-hidden border-[7px] border-[var(--ssar-gold)] bg-white shadow-[7px_8px_0_#6b7a90] sm:shadow-[12px_12px_0_#6b7a90]"><img src={service.image} alt="" className="h-56 w-full object-cover" /><div className="p-6"><h3 className="text-2xl font-bold">{service.title}</h3><p className="mt-3 text-lg leading-7">{service.text}</p></div></article>)}
           </div>
           <div className="mt-12 text-center"><NavLink to="/our-services" className="orange-button">Explore all services</NavLink></div>
         </div>
@@ -64,7 +67,7 @@ export function HomePage() {
 
       <GovernmentBusinessSection />
 
-      <section className="bg-[#edf4f4] section-pad">
+      <section className="bg-[#f5f7fa] section-pad">
         <div className="site-container"><h2 className="mb-12 text-center text-5xl">Our Mission & Vision</h2><div className="grid gap-7 lg:grid-cols-2">
           <article className="relative isolate min-h-[390px] overflow-hidden rounded-md bg-[url('/assets/mission.webp')] bg-cover bg-center p-10 text-white"><div className="absolute inset-0 -z-10 bg-black/60"/><h3 className="text-4xl font-bold">Our Mission</h3><p className="mt-5 text-xl leading-8">Our mission is to meet and surpass client’s expectation in providing quality services with outstanding values that enables them to transform today’s challenges into tomorrow’s successes.</p><p className="mt-4 text-lg leading-8">We believe in maintaining long term relationship with our clients by serving them with ethical, highly qualitative and in utmost way with least turn around time.</p></article>
           <article className="relative isolate min-h-[390px] overflow-hidden rounded-md bg-[url('/assets/vision.webp')] bg-cover bg-center p-10 text-white"><div className="absolute inset-0 -z-10 bg-black/60"/><h3 className="text-4xl font-bold">Our Vision</h3><p className="mt-5 text-xl leading-8">By adhering to our unwavering ethics and creating value for all of our stakeholders, we aim to become one of the leading human resources consulting firms.</p><p className="mt-4 text-lg leading-8">To become leading and the first choice for integrated skilled manpower service provider globally.</p></article>
