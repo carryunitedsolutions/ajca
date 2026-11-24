@@ -12,7 +12,7 @@ export function HomeStructuredData() {
           '@id': `${homeUrl}#organization`,
           name: company.name,
           url: homeUrl,
-          logo: new URL('/assets/footer-logo.webp', homeUrl).href,
+          logo: new URL('/logo.jpeg', homeUrl).href,
           description: 'AJCA GROUP provides manpower supply, recruitment, staffing and payroll support across India.',
           founder: {
             '@type': 'Person',

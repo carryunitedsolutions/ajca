@@ -19,7 +19,7 @@ export function Footer() {
       <div className="site-container grid items-center gap-4 py-8 md:grid-cols-[auto_1fr] lg:grid-cols-12 lg:gap-0 lg:py-10">
         <div className="py-4 lg:col-span-2">
           <NavLink to="/" aria-label="AJCA GROUP home">
-            <CompanyBrand />
+            <CompanyBrand variant="footer" />
           </NavLink>
         </div>
 

@@ -1,8 +1,17 @@
 import { company } from '../../data/company'
 
-export function CompanyBrand() {
-  return <span className="inline-flex flex-col text-center leading-none" aria-label={company.name}>
-    <span className="text-3xl font-bold tracking-[.12em] text-[var(--ssar-teal)]">AJCA</span>
-    <span className="mt-2 text-sm font-bold tracking-[.35em] text-[var(--ssar-orange)]">GROUP</span>
-  </span>
+type CompanyBrandProps = {
+  variant?: 'header' | 'footer'
+}
+
+export function CompanyBrand({ variant = 'header' }: CompanyBrandProps) {
+  return (
+    <img
+      src="/logo.jpeg"
+      alt={company.name}
+      width="1536"
+      height="1024"
+      className={`block h-auto object-contain mix-blend-multiply ${variant === 'footer' ? 'w-44 sm:w-48' : 'w-28 sm:w-32'}`}
+    />
+  )
 }
