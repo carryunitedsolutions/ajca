@@ -5,7 +5,7 @@ export const company = {
   name: 'AJCA GROUP',
   siteUrl: 'https://www.ajcagroup.com/',
   founder: 'Ajit Kumar Jha',
-  email: 'ajcahr2020@gmail.com',
+  email: 'support@ajcagroup.com',
   phone: '+91 70039 65882',
   phoneHref: 'tel:+917003965882',
   whatsappHref: `https://wa.me/917003965882?text=${encodeURIComponent(whatsappMessage)}`,
