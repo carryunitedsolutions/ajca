@@ -17,9 +17,9 @@ export function HomePage() {
       <HomeStructuredData />
       <section className="maze-pattern overflow-hidden">
         <div className="grid lg:h-[700px] lg:grid-cols-12 lg:grid-rows-[repeat(14,50px)]">
-          <div className="flex min-h-40 flex-col justify-center bg-[#6684a3] px-7 py-7 sm:px-10 lg:col-[1/5] lg:row-[1/5] lg:min-h-0">
-            <span className="text-sm font-bold uppercase tracking-[.2em] text-[#142b43]">AJCA GROUP</span>
-            <p className="mt-3 max-w-md text-3xl font-bold leading-tight text-white sm:text-4xl">Reliable teams.<br />Stronger businesses.</p>
+          <div className="flex min-h-44 flex-col justify-center bg-[#6684a3] px-7 py-7 sm:px-10 lg:col-[1/5] lg:row-[1/5] lg:min-h-0">
+            <span className="text-4xl font-bold uppercase leading-none tracking-[.06em] text-white sm:text-5xl lg:text-[clamp(2rem,3vw,3.5rem)]">AJCA GROUP</span>
+            <p className="mt-4 max-w-md text-lg font-medium leading-snug text-white/90 sm:text-xl lg:text-2xl">Reliable teams.<br />Stronger businesses.</p>
           </div>
 
           <img

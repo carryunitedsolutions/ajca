@@ -24,7 +24,7 @@ export function GovernmentBusinessSection() {
         <div className="max-w-4xl">
           <p className="text-sm font-bold uppercase tracking-[.2em] text-[#efc777]">Government business readiness</p>
           <h2 id="government-business-title" className="mt-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
-            AJCA GROUP – Ready for Government Business Through <span className="text-[#d6a347]">GeM</span>
+            AJCA GROUP – Ready for Government Business Through <span className="text-[#d6a347]">GeM , IndiaMART</span>
           </h2>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-white/90">
             AJCA GROUP is fully prepared and committed to participating in Government Business Opportunities through the Government e-Marketplace (GeM). We are ready to work with Central Government Departments, State Government Departments, Public Sector Undertakings (PSUs), Government Institutions and other authorised organisations.
