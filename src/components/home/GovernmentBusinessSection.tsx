@@ -13,6 +13,7 @@ const opportunities = [
   'Government Tenders',
   'Manpower Outsourcing Contracts',
   'Eligible Procurement Opportunities',
+  'IndiaMART'
 ]
 
 export function GovernmentBusinessSection() {
