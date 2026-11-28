@@ -3,6 +3,7 @@ const address = 'Rishra, Hooghly, West Bengal'
 
 export const company = {
   name: 'AJCA GROUP',
+  siteUrl: 'https://www.ajcagroup.com/',
   founder: 'Ajit Kumar Jha',
   email: 'ajcahr2020@gmail.com',
   phone: '+91 70039 65882',

@@ -3,7 +3,7 @@ import { company } from '../../data/company'
 
 export function HomeStructuredData() {
   useEffect(() => {
-    const homeUrl = new URL('/', window.location.origin).href
+    const homeUrl = company.siteUrl
     const structuredData = {
       '@context': 'https://schema.org',
       '@graph': [
