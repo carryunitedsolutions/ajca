@@ -41,7 +41,7 @@ export function Footer() {
       <div className="site-container grid gap-2 py-4 text-center text-sm text-zinc-600 md:grid-cols-2 md:text-left">
         <p>Copyright © AJCA GROUP</p>
         <p className="text-[#1b2b40] md:text-right">
-          Powered by <span className="font-bold text-[#8d5e18]">Carry United Solutions Private Limited</span>
+          Powered by <a href="https://www.carryunited.com/" target="_blank" rel="noopener noreferrer" className="font-bold text-[#8d5e18] hover:underline focus-visible:underline">Carry United Solutions Private Limited</a>
         </p>
       </div>
     </footer>
